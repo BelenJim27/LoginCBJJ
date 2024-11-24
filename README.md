@@ -40,7 +40,8 @@ El servicio `UserService` se encarga de interactuar con la API externa para mane
         }
         return this.loggedInUser;
       }
-    }```
+    }
+```
 	
 - **getUsers:** Hace una solicitud HTTP para obtener la lista de usuarios desde el API (https://api.escuelajs.co/api/v1/users).
 Retorna un observable con los datos de los usuarios.
@@ -68,7 +69,8 @@ iniciarSesion() {
       verticalPosition: 'top', 
     });
   }
-  }```
+  }
+```
 - **ngOnInit:** Llama a getUsers desde UserService para obtener todos los usuarios registrados.
 - **iniciarSesion:** Busca en user un usuario cuyo email y password coincidan con los valores ingresados (username y password).
 - **Si el usuario existe: **
